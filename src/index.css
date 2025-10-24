@@ -1,0 +1,205 @@
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --bg-gradient: linear-gradient(135deg, #8B5CF6 0%, #A78BFA 50%, #7C3AED 100%);
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --text-light: #999999;
+  --card-bg: #ffffff;
+  --card-shadow: rgba(0, 0, 0, 0.1);
+  --border-color: #e9ecef;
+  --navbar-bg: rgba(255, 255, 255, 0.95);
+  --footer-bg: #2c3e50;
+}
+
+html.dark-mode {
+  --bg-primary: #1a1a2e;
+  --bg-secondary: #16213e;
+  --bg-gradient: linear-gradient(135deg, #6B46C1 0%, #805AD5 50%, #553C9A 100%);
+  --text-primary: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --text-light: #808080;
+  --card-bg: #16213e;
+  --card-shadow: rgba(0, 0, 0, 0.3);
+  --border-color: #2d3748;
+  --navbar-bg: rgba(26, 26, 46, 0.95);
+  --footer-bg: #0f1419;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  transition: background-color 0.3s ease;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#root {
+  background-color: transparent;
+}
+
+code, pre {
+  font-family: 'JetBrains Mono', source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.page-header h1 {
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.nav-logo span {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.6s ease-out forwards;
+}
+
+.slide-in-right {
+  animation: slideInRight 0.6s ease-out forwards;
+}
+
+/* Scroll reveal animations */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Dark mode card styles */
+html.dark-mode .project-card,
+html.dark-mode .lesson-card,
+html.dark-mode .info-card,
+html.dark-mode .detail-card,
+html.dark-mode .lesson-category,
+html.dark-mode .contact-form-container,
+html.dark-mode .meeting-schedule,
+html.dark-mode .resources-preview,
+html.dark-mode .projects-intro {
+  background-color: var(--card-bg);
+  color: var(--text-primary);
+  box-shadow: 0 4px 15px var(--card-shadow);
+}
+
+html.dark-mode .lesson-card {
+  background-color: var(--bg-secondary);
+  border-left-color: #A78BFA;
+}
+
+html.dark-mode .project-card p,
+html.dark-mode .lesson-card p,
+html.dark-mode .info-card p,
+html.dark-mode .detail-card p,
+html.dark-mode .category-description,
+html.dark-mode .intro-content p {
+  color: var(--text-secondary);
+}
+
+html.dark-mode .lesson-card h3,
+html.dark-mode .detail-card h2,
+html.dark-mode .info-card h3 {
+  color: var(--text-primary);
+}
+
+html.dark-mode .schedule-month-compact {
+  color: var(--text-primary);
+}
+
+html.dark-mode .project-link-indicator {
+  border-top-color: var(--border-color);
+}
+
+html.dark-mode .google-form-embed iframe {
+  filter: brightness(0.9);
+}
+
+/* Button ripple effect */
+button, .nav-link-cta, .cta-button {
+  position: relative;
+  overflow: hidden;
+}
+
+button::after, .nav-link-cta::after, .cta-button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+button:active::after, .nav-link-cta:active::after, .cta-button:active::after {
+  width: 300px;
+  height: 300px;
+}
