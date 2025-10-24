@@ -101,7 +101,6 @@ function Lessons() {
                 <div className="video-info">
                   <h3>{lesson.title}</h3>
                   <p>{lesson.description}</p>
-                  <span className={`lesson-level ${lesson.level.toLowerCase()}`}>{lesson.level}</span>
                 </div>
               </div>
             ))}
@@ -127,7 +126,6 @@ function Lessons() {
                 <div className="video-info">
                   <h3>{lesson.title}</h3>
                   <p>{lesson.description}</p>
-                  <span className={`lesson-level ${lesson.level.toLowerCase()}`}>{lesson.level}</span>
                 </div>
               </div>
             ))}

@@ -18,6 +18,28 @@ function Home() {
           <Link to="/contact" className="cta-button">Join the Club</Link>
         </div>
       </section>
+
+      <section className="gallery-section">
+        <div className="gallery-container">
+          <h2>Our Community</h2>
+          <p className="gallery-subtitle">See what we've been up to at club fairs and meetings</p>
+          
+          <div className="photo-grid">
+            <div className="photo-card">
+              <img src="/IMG_8961 2.JPG" alt="Club members at club fair" />
+            </div>
+            <div className="photo-card">
+              <img src="/IMG_8985 2.JPG" alt="Club fair booth display" />
+            </div>
+            <div className="photo-card">
+              <img src="/IMG_8999 2.JPG" alt="Student coding at club fair" />
+            </div>
+            <div className="photo-card">
+              <img src="/IMG_9010.JPG" alt="Club members welcoming new students" />
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

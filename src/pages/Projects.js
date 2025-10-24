@@ -75,9 +75,6 @@ function Projects() {
             >
               <div className="project-header">
                 <h3>{project.name}</h3>
-                <span className={`difficulty ${project.difficulty.toLowerCase()}`}>
-                  {project.difficulty}
-                </span>
               </div>
               <div className="project-languages">
                 {project.languages.map((lang, i) => (
@@ -94,7 +91,7 @@ function Projects() {
 
       <section className="more-projects">
         <h2>Want More Ideas?</h2>
-        <p>Explore hundreds of additional "Build Your Own X" tutorials covering everything from operating systems to neural networks.</p>
+        <p>Check out this awesome GitHub repo with tons of "Build Your Own X" tutorials. You'll find everything from building your own database to creating a neural network from scratch!</p>
         <a
           href="https://github.com/codecrafters-io/build-your-own-x"
           target="_blank"

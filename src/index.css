@@ -10,6 +10,8 @@
   --border-color: #e9ecef;
   --navbar-bg: rgba(255, 255, 255, 0.95);
   --footer-bg: #2c3e50;
+  --accent-primary: #8B5CF6;
+  --accent-hover: #7C3AED;
 }
 
 html.dark-mode {
@@ -24,6 +26,8 @@ html.dark-mode {
   --border-color: #2d3748;
   --navbar-bg: rgba(26, 26, 46, 0.95);
   --footer-bg: #0f1419;
+  --accent-primary: #6B46C1;
+  --accent-hover: #553C9A;
 }
 
 * {
@@ -150,7 +154,7 @@ html.dark-mode .projects-intro {
 
 html.dark-mode .lesson-card {
   background-color: var(--bg-secondary);
-  border-left-color: #A78BFA;
+  border-left-color: var(--accent-primary);
 }
 
 html.dark-mode .project-card p,

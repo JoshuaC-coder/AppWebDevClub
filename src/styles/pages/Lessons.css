@@ -15,7 +15,6 @@
   padding: 2.5rem;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  animation: fadeIn 0.6s ease-out;
 }
 
 .lesson-category h2 {
@@ -45,7 +44,6 @@
   overflow: hidden;
   transition: all 0.3s ease;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-  animation: fadeIn 0.6s ease-out;
 }
 
 .video-card:hover {
@@ -99,7 +97,6 @@
   border-left: 4px solid #8B5CF6;
   transition: all 0.3s ease;
   cursor: pointer;
-  animation: fadeIn 0.6s ease-out;
 }
 
 .lesson-card:hover {
@@ -131,18 +128,18 @@
 }
 
 .lesson-level.beginner {
-  background-color: #d4edda;
-  color: #155724;
+  background-color: #E9D5FF;
+  color: #6B21A8;
 }
 
 .lesson-level.intermediate {
-  background-color: #fff3cd;
-  color: #856404;
+  background-color: #C4B5FD;
+  color: #5B21B6;
 }
 
 .lesson-level.advanced {
-  background-color: #f8d7da;
-  color: #721c24;
+  background-color: #A78BFA;
+  color: #FFFFFF;
 }
 
 .resources-preview {
@@ -151,7 +148,6 @@
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
-  animation: fadeIn 0.8s ease-out;
 }
 
 .resources-preview h2 {
