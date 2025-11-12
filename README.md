@@ -55,38 +55,6 @@ npm run build
 
 Builds the app for production to the `build` folder, optimized for best performance.
 
-## Project Structure
-
-```
-AppWebDevClub/
-├── public/
-│   ├── index.html
-│   ├── logo.svg
-│   └── favicon.ico
-├── src/
-│   ├── components/
-│   │   ├── layout/
-│   │   │   ├── Navbar.js
-│   │   │   ├── Footer.js
-│   │   │   └── Layout.js
-│   │   ├── DarkModeToggle.js
-│   │   └── ScrollToTop.js
-│   ├── pages/
-│   │   ├── Home.js
-│   │   ├── Lessons.js
-│   │   ├── Projects.js
-│   │   └── Contact.js
-│   ├── styles/
-│   │   ├── components/
-│   │   └── pages/
-│   ├── App.js
-│   ├── App.css
-│   ├── index.js
-│   └── index.css
-├── package.json
-└── README.md
-```
-
 ## Pages
 
 - **Home**: Welcome page with club mission and 15+ year legacy
